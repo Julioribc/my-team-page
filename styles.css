@@ -1,0 +1,160 @@
+:root{
+    --dark-color: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: auto;
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Serif', serif;
+}
+
+.tittle {
+    width: 100%;
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    color: var(--dark-color);
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.subtittle{
+    width: 117px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.text{
+    width: 333px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--dark-color);
+}
+
+
+
+.profile{
+    position: relative;
+}
+
+
+.profile__position{
+    font-family: PT Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 13px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    color: var(--dark-color);
+    display: block;
+    position: absolute;
+    left: -182px;
+    top: -144px;
+    right: 154px;
+    bottom: -51px;
+    
+}
+
+.profile:nth-child(2n+2){
+    margin-top: 40px;
+}
+
+.profile:nth-child(2n+2) .profile__position {
+    position: absolute;
+    left: -142px;
+    top: -144px;
+    right: 154px;
+    bottom: -51px;
+}
+
+.profile__name{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    margin-top: 10px;
+    color: var(--dark-color);
+}
+
+.profile__photo{
+    width: 150px;
+    height: 230px;
+}
+
+
+@media screen and (min-width: 992px) {
+    html, body {
+        height: auto;
+    }
+
+    .tittle {
+        width: 50%;
+    }
+
+    .article {
+        margin-top: 70px;
+    }
+
+    .contenedor {
+        max-width: 750px;
+    }
+
+    .profile {
+        width: 250px;
+    }
+
+    .profile:nth-child(2n+1) .profile__position {
+        position: absolute;
+        left: -325px;
+        top: -203px;
+        right: 274px;
+        bottom: -175px;
+    }
+
+    .profile:nth-child(2n+2) {
+        margin-top: 0px;
+    }
+
+    .profile:nth-child(3n+2) {
+        margin-top: 60px;
+    }
+
+    .profile:nth-child(3n+2) .profile__position{
+        position: absolute;
+        left: -266px;
+        top: -203px;
+        right: 274px;
+        bottom: -175px;
+    }
+
+    .profile:nth-child(2n+4) .profile__position {
+        position: absolute;
+        left: -177px;
+        top: -144px;
+        right: 216px;
+        bottom: -29px;
+    }
+}
